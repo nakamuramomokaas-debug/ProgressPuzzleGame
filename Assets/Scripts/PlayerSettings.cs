@@ -10,5 +10,5 @@ public class PlayerSettings
         Left,
     }
 
-    public Direction direction;
+    public Direction direction = Direction.Down;
 }
