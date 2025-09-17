@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 137148042}
   - component: {fileID: 137148041}
   - component: {fileID: 137148040}
+  - component: {fileID: 137148043}
   m_Layer: 5
   m_Name: cube1
   m_TagString: CubeItem
@@ -191,7 +192,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -245,6 +246,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137148038}
   m_CullTransparentMesh: 1
+--- !u!114 &137148043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137148038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd224079873878c458b3856801189dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
 --- !u!1 &313198233
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
+  colorType: 0
 --- !u!1 &393808454
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +436,7 @@ GameObject:
   - component: {fileID: 393808458}
   - component: {fileID: 393808457}
   - component: {fileID: 393808456}
+  - component: {fileID: 393808459}
   m_Layer: 5
   m_Name: cube4
   m_TagString: CubeItem
@@ -477,7 +493,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -531,6 +547,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393808454}
   m_CullTransparentMesh: 1
+--- !u!114 &393808459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393808454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd224079873878c458b3856801189dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 2
 --- !u!1 &449873777
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +648,7 @@ GameObject:
   - component: {fileID: 497659158}
   - component: {fileID: 497659157}
   - component: {fileID: 497659156}
+  - component: {fileID: 497659159}
   m_Layer: 5
   m_Name: cube3
   m_TagString: CubeItem
@@ -675,7 +705,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -729,6 +759,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497659154}
   m_CullTransparentMesh: 1
+--- !u!114 &497659159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497659154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd224079873878c458b3856801189dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
 --- !u!1 &575426358
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 1
+  colorType: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1152,7 @@ GameObject:
   - component: {fileID: 999190183}
   - component: {fileID: 999190182}
   - component: {fileID: 999190181}
+  - component: {fileID: 999190184}
   m_Layer: 5
   m_Name: cube2
   m_TagString: CubeItem
@@ -1164,7 +1209,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1218,6 +1263,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999190179}
   m_CullTransparentMesh: 1
+--- !u!114 &999190184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999190179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd224079873878c458b3856801189dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 1
 --- !u!1 &1610595500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
+  colorType: 0
 --- !u!1 &1978179092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,6 +1818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 1
+  colorType: 2
 --- !u!1 &2134297668
 GameObject:
   m_ObjectHideFlags: 0

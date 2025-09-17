@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class PlayerController : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] PlayerSettings.Direction direction;
+    [SerializeField] ColorSettings.ColorType colorType;
     Rigidbody2D rb;
     int speed = 100;
     bool isMove = false;
@@ -41,6 +42,28 @@ public class PlayerController : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    //ブロックとの当たり判定から作る
-    //当たって自分と同じ色だったらとって進む。違うなら少し戻る。
+    //違う色のブロックに当たったら触れない位置まで戻る処理から。
+    //プレイヤー同士が当たった時も同じ処理になる。
+    void StopMove()
+    {
+        isMove = false;
+        rb.velocity = Vector2.zero;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("CubeItem"))
+        {
+            ColorSettings.ColorType oColor = other.GetComponent<CubeController>().ColorType();
+            if(colorType == oColor) 
+            {
+                other.gameObject.SetActive(false);
+            }
+            else
+            {
+                StopMove();
+                Debug.Log("違う色のブロックにあたった");
+            } 
+        }
+    }
 }
